@@ -84,7 +84,7 @@ casio_check.click()
 time.sleep(2)
 casio_mismatch = []
 
-casio_results = WebDriverWait(driver, 5).until(EC.visibility_of_all_elements_located((By.XPATH,"//ul[contains(@class,  'srp-results')]//li[@id]")))
+casio_results = WebDriverWait(driver, 5).until(EC.visibility_of_all_elements_located((By.XPATH, "//ul[contains(@class,  'srp-results')]//li[@id]")))
 # print(casio_results)
 
 for result in casio_results[-2:]:
